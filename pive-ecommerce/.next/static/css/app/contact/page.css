@@ -1,0 +1,33 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/contact/contact.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.contact-container {
+    background: rgba(255, 255, 255, 0.2); /* Adjust transparency */
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px); /* Increase the blur */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adjust shadow for depth */
+    border-radius: 1rem; /* Rounded corners for the container */
+  }
+  
+  .contact-container h2,
+  .contact-container div,
+  .contact-container label {
+    color: #e0e0e0; /* Lighter text for better readability */
+  }
+  
+  .contact-container input,
+  .contact-container textarea {
+    background: rgba(255, 255, 255, 0.1); /* Frosted glass effect for inputs */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Consistent borders for inputs */
+    color: #e0e0e0; /* Light text for inputs */
+  }
+  
+  .contact-container button {
+    background: rgba(108, 99, 255, 0.8); /* Adjust button color for consistency */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .contact-container button:hover {
+    background: rgba(108, 99, 255, 1); /* Darker color on hover */
+  }
+  

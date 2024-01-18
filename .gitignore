@@ -1,0 +1,5 @@
+
+/pive-ecommerce/node_modules/
+
+.env
+venv/

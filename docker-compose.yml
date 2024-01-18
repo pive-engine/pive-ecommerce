@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/usr/src/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1  # Remove this line in production
+      # - NEXT_WEBPACK_USEPOLLING=1
+      #  - CHOKIDAR_USEPOLLING=true
+      # - WATCHPACK_POLLING-true
+
+  frontend:
+    build: ./pive-ecommerce
+    volumes:
+      - ./pive-ecommerce:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development  
+# Ustaw to na `production` dla środowiska produkcyjnego
