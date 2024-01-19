@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import React, { useState, useRef } from 'react';
-import products from './product';
+import products from '@/constants/products/products';
 
 const leftArrow = '/images/left.png';
 const rightArrow = '/images/right.png';
@@ -32,15 +32,15 @@ const ProductCard = ({ product }) => {
   );
 };
 
-const ProductGrid = () => {
+const ProductGrid = ({ products }) => {
   const productsPerPage = 18;
   const totalProducts = products.length;
   const totalPages = Math.ceil(totalProducts / productsPerPage);
   const [currentPage, setCurrentPage] = useState(1);
 
   const productsToDisplay = products.slice(
-    (currentPage - 1) * productsPerPage,
-    currentPage * productsPerPage
+      (currentPage - 1) * productsPerPage,
+      currentPage * productsPerPage
   );
 
   const paginatedProducts = products.slice(productsPerPage);

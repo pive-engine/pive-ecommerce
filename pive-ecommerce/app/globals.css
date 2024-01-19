@@ -55,3 +55,57 @@ body {
   display: flex; /* Włączanie flexbox, aby zawartość nie łamała się w nowej linii */
 }
 /* Add this to your global styles, or adjust the class of the parent container */
+
+
+
+
+
+
+
+
+.search-results-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  color: black;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin-top: 2px; /* Adjust as needed */
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%; /* Adjust width as needed */
+}
+
+.search-result-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-result-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.search-result-item:hover {
+  background-color: #f7f7f7;
+}
+.search-results-dropdown {
+  position: absolute;
+  top: 100px; /* Adjust this value based on the height of your search box */
+  left: 60%;
+  transform: translateX(-50%);
+  background: white;
+  color: black;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  width: var(--search-dropdown-width, 350px); /* Adjust this width to match the width of your search input */
+}

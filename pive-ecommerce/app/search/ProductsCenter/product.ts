@@ -97,7 +97,6 @@ const products = [
         link: "https://example.com/product/12",
         category: 'Stickers'
     },
-    // Dodaj więcej produktów z pozostałymi kategoriami tutaj, zapewniając, że każda kategoria jest użyta co najmniej raz
 ];
 
 export default products;

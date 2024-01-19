@@ -11,7 +11,7 @@ const TopBar: React.FC = () => {
     <div className="flex items-center space-x-4">
 
       <Link href="/find-store">
-        <span className="hover:underline cursor-pointer">Find Store</span>
+        <span className="hover:underline cursor-pointer">Find a Store</span>
       </Link>
       <Link href="/help">
         <span className="hover:underline cursor-pointer">Help</span>

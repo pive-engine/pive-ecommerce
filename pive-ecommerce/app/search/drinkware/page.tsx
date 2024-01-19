@@ -3,12 +3,15 @@ import Image from 'next/image';
 import ProductsCenter from '@/app/search/ProductsCenter/page';
 import SideBarCategoryLeft from '../ProductsCategorySideBarLeft/page'; // Zaktualizuj ś
 import SideBarProductsFilterRight from '../SideBarProductsFilterRight/page'; // Zaktualizuj ścieżkę do właściwej lokalizacji
+import products from '@/constants/products/products';
 
 export default function Page() {
+    const drinkwareProducts = products.filter(product => product.category === 'drinkware');
+
     return (
         <div className="flex">
             <SideBarCategoryLeft />
-            <ProductsCenter />
+            <ProductsCenter products={drinkwareProducts} />
             <SideBarProductsFilterRight />
         </div>
     );

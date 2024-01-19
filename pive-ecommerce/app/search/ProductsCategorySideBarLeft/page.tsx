@@ -27,7 +27,7 @@ const SideBarCategoryLeft = () => {
 
   return (
     <div className="bg-[#171717] text-white w-64 space-y-3 p-5">
-      <div className="text-lg font-bold">Collections</div>
+      <div className="text-lg font-bold">Categories</div>
       {categories.map((category) => (
         <div
           key={category.name}

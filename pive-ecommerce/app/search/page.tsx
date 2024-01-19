@@ -1,15 +1,15 @@
-import RootLayout from '../../app/layout' // Make sure the path to Layout.tsx is correct
-import Image from 'next/image';
+import React from 'react';
 import ProductsCenter from '@/app/search/ProductsCenter/page';
-import SideBarCategoryLeft from './ProductsCategorySideBarLeft/page'; // Zaktualizuj ś
-import SideBarProductsFilterRight from './SideBarProductsFilterRight/page'; // Zaktualizuj ścieżkę do właściwej lokalizacji
+import SideBarCategoryLeft from './ProductsCategorySideBarLeft/page';
+import SideBarProductsFilterRight from './SideBarProductsFilterRight/page';
+import products from '@/constants/products/products';
 
 export default function Page() {
     return (
         <div className="flex">
             <SideBarCategoryLeft />
-            <ProductsCenter />
+            <ProductsCenter products={products} /> {/* Przekazujesz wszystkie produkty */}
             <SideBarProductsFilterRight />
         </div>
     );
-    }
+}

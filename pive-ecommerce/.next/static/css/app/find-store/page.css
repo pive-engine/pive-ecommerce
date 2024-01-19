@@ -1,0 +1,95 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/find-store/FindStore.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.find-store-container {
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; /* Centruje kontener na stronie */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Maksymalna szerokość kontenera */
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(50% - 10px); /* Odejmuje 10px odstępu pomiędzy kolumnami */
+    margin-right: 20px; /* Odstęp między tekstem a mapą */
+  }
+  
+  .store-info, .online-stores {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .store-map {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(50% - 10px); /* Odejmuje 10px odstępu pomiędzy kolumnami */
+  }
+  
+  .map-iframe {
+    width: 100%;
+    height: 300px; /* Stała wysokość mapy */
+  }
+  
+  .online-stores ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .store-link {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+    display: block;
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  .store-link:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .map-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Wysokość powinna być taka sama jak iframe mapy */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .find-store-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text-container, .store-map {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  
+    .map-iframe {
+      height: auto; /* Wysokość mapy jest automatyczna, aby była responsywna */
+    }
+  }
+  
