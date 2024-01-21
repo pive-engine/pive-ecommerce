@@ -39,9 +39,14 @@ const ProductCard = ({ product, className }) => {
                 <p className="text-sm">{product.name}</p>
                 <p className="text-lg font-semibold">{product.price}</p>
             </div>
+            {/* Add to Cart Button */}
+            <button className="absolute bottom-0 right-0 m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                Add to Cart
+            </button>
         </div>
     );
 };
+
 
 
 const ProductGrid = () => {
